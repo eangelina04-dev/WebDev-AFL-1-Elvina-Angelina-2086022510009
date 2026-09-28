@@ -1,0 +1,128 @@
+.container-app {
+    max-width: 520px;
+}
+
+.title {
+    text-align: center;
+    font-weight: 700;
+}
+
+.card {
+    border: 1px solid rgb(73, 72, 72);
+}
+
+.navbar-custom {
+    background-color: #cce8fa;
+    border: 1px solid #8fb8d8;
+    padding: 0.75rem 1rem;
+}
+
+.navbar-custom .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .nav-link {
+    color: #000;
+    font-weight: 700;
+    padding: 0 0.75rem;
+}
+
+.navbar-custom .nav-item:first-child .nav-link {
+    padding-left: 0;
+}
+
+.navbar-custom .nav-item:not(:last-child)::after {
+    content: "|";
+    color: #000;
+}
+
+.card-oe {
+    border: 2px solid #555;
+    border-radius: 0;
+}
+
+.oe-title {
+    text-align: center;
+    color: #2b3a99;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin: 1rem 0 1.5rem;
+}
+
+.oe-table {
+    width: 90%;
+    margin: 0 auto 2rem;
+    border-collapse: collapse;
+    background-color: #fff;
+}
+
+.oe-table th,
+.oe-table td {
+    border: 2px solid #b0b0b0;
+    padding: 0.75rem 1rem;
+    text-align: left;
+}
+
+.oe-table th {
+    background-color: #99d9fb;
+    font-weight: 500;
+}
+
+.oe-form {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.oe-row {
+    display: flex;
+    justify-content: center;
+}
+
+.oe-row label,
+.oe-row select {
+    height: 52px;
+}
+
+.oe-row label {
+    width: 90px;
+    display: flex;
+    align-items: center;
+}
+
+.oe-select {
+    position: relative;
+}
+
+.oe-select::after {
+    content: "▼";
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.4rem;
+    color: #444;
+    pointer-events: none;
+}
+
+.oe-row select {
+    width: 210px;
+    padding: 0 48px 0 12px;
+    border: 2px solid #b0b0b0;
+    border-radius: 0;
+    background: #fff;
+    appearance: none;
+}
+
+.oe-row + .oe-row select {
+    border-top: none;
+}
+
+.btn-save {
+    margin-top: 0.75rem;
+    padding: 0.4rem 2.5rem;
+    background-color: #99d9fb;
+    border: 2px solid #4a6a80;
+    border-radius: 10px;
+    font-size: 1.2rem;
+}
